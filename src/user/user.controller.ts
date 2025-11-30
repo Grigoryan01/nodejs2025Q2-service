@@ -45,6 +45,7 @@ export class UserController {
     return this.userService.updatePassword(id, updatePasswordDto);
   }
 
+  
   @Delete(':id')
   @HttpCode(HttpStatus.NO_CONTENT)
   @UsePipes(new UuidValidationPipe())

@@ -17,7 +17,6 @@ export class InMemoryStorageService {
     tracks: [],
   };
 
-  // User methods
   getAllUsers(): User[] {
     return this.users;
   }
