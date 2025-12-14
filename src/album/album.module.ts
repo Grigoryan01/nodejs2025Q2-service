@@ -7,4 +7,3 @@ import { AlbumService } from './album.service';
   providers: [AlbumService],
 })
 export class AlbumModule {}
-

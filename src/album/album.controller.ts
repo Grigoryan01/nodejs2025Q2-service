@@ -49,4 +49,3 @@ export class AlbumController {
     this.albumService.remove(id);
   }
 }
-

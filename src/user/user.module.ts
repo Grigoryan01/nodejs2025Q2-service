@@ -7,4 +7,3 @@ import { UserService } from './user.service';
   providers: [UserService],
 })
 export class UserModule {}
-

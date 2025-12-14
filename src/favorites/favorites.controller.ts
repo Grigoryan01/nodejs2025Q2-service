@@ -65,4 +65,3 @@ export class FavoritesController {
     this.favoritesService.removeArtist(id);
   }
 }
-

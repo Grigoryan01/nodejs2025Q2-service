@@ -7,4 +7,3 @@ import { ArtistService } from './artist.service';
   providers: [ArtistService],
 })
 export class ArtistModule {}
-

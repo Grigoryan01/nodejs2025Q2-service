@@ -17,4 +17,3 @@ export class UuidValidationPipe implements PipeTransform {
     return value;
   }
 }
-

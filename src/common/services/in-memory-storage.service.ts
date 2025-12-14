@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { User } from '../entities/user.entity';
-import { Artist } from '../entities/artist.entity';
-import { Track } from '../entities/track.entity';
-import { Album } from '../entities/album.entity';
-import { Favorites } from '../entities/favorites.entity';
+import { User } from '../../entities/user.entity';
+import { Artist } from '../../entities/artist.entity';
+import { Track } from '../../entities/track.entity';
+import { Album } from '../../entities/album.entity';
+import { Favorites } from '../../entities/favorites.entity';
 
 @Injectable()
 export class InMemoryStorageService {
@@ -211,4 +211,3 @@ export class InMemoryStorageService {
     return true;
   }
 }
-

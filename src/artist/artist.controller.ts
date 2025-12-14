@@ -49,4 +49,3 @@ export class ArtistController {
     this.artistService.remove(id);
   }
 }
-

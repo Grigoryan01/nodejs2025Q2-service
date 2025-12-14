@@ -32,13 +32,13 @@ export class UserController {
 
   @Post()
   @HttpCode(HttpStatus.CREATED)
-  create(@Body() createUserDto: CreateUserDto) {
+  async create(@Body() createUserDto: CreateUserDto) {
     return this.userService.create(createUserDto);
   }
 
   @Put(':id')
   @UsePipes(new UuidValidationPipe())
-  updatePassword(
+  async updatePassword(
     @Param('id') id: string,
     @Body() updatePasswordDto: UpdatePasswordDto,
   ) {
@@ -52,4 +52,3 @@ export class UserController {
     this.userService.remove(id);
   }
 }
-
